@@ -1,0 +1,5 @@
+*.o
+*.so
+mediatek_inject.exe
+mediatek_inject.linux
+mediatek_inject.osx
