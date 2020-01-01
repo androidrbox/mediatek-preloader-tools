@@ -16,7 +16,7 @@
 GIT_VERSION := $(shell git describe --abbrev=6 --dirty --always --tags)
 E2FSPROGS_LIB = e2fsprogs/lib
 SERIALPORT = libserialport
-CFLAGS = -std=gnu99 -Wall -Werror -Wno-error=deprecated-declarations -DGIT_VERSION=\"$(GIT_VERSION)\" \
+CFLAGS = -std=gnu99 -Wall -Werror -Wno-error=deprecated-declarations -Wno-error=restrict -DGIT_VERSION=\"$(GIT_VERSION)\" \
 		 -I. -I$(E2FSPROGS_LIB) -I$(SERIALPORT)
 LDLIBS = -lpthread
 
